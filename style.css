@@ -1,0 +1,10 @@
+.videos
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+body
+{
+    background: #000;
+}
