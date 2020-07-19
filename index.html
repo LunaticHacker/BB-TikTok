@@ -32,7 +32,7 @@
 
             <template v-if="videos" v-for="video in videos">
                 <div>
-                    <video :src=video.videoUrl width=300px controls preload="none" :poster=video.covers.default>
+                    <video :src=video.videoUrl width=300px controls preload="none" :poster=video.covers.default loop>
                     </video>
                 </div>
             </template>
