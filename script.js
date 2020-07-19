@@ -38,7 +38,6 @@ var app = new Vue({
         json = await res.json();
         this.videos = json.collector;
         this.state = null;
-        console.log(this.videos.length);
         if (this.videos.length > 0) {
           this.avatar = this.videos[0].authorMeta.avatar;
           this.title = this.videos[0].authorMeta.nickName;
