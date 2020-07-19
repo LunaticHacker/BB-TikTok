@@ -23,7 +23,7 @@ var app = new Vue({
 
         this.videos = json.collector;
         this.state = null;
-      } catch {
+      } catch (error) {
         this.videos = [];
         this.state = null;
       }
@@ -43,7 +43,7 @@ var app = new Vue({
           this.title = this.videos[0].authorMeta.nickName;
           this.signature = this.videos[0].authorMeta.signature;
         }
-      } catch {
+      } catch (error) {
         this.videos = [];
         this.state = null;
       }
