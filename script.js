@@ -17,7 +17,7 @@ var app = new Vue({
         this.title = "Bringing Back TikTok";
         this.signature = "Find videos by Username";
         res = await fetch(
-          "https://cors-anywhere.herokuapp.com/https://tiktokrestapi.herokuapp.com/trending"
+          "https://tiktokrestapi.herokuapp.com/trending"
         );
         json = await res.json();
 
